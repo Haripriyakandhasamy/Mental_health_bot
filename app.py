@@ -9,22 +9,50 @@ vectorizer = joblib.load("vectorizer.joblib")
 # Streamlit config
 st.set_page_config(
     page_title="Mental Wellness AI",
-    page_icon="🌿",
+    page_icon="😊",
     layout="centered"
 )
 
-# Soft blue background
 st.markdown("""
 <style>
+/* App background */
 .stApp {
     background: linear-gradient(135deg, #dbeafe, #eff6ff);
 }
+
+/* Main container text */
 .block-container {
     padding-top: 2rem;
+    color: #000000;  /* Make all normal text black */
+}
+
+/* Titles, headers, captions */
+h1, h2, h3, h4, h5, h6, .stText, .css-10trblm { 
+    color: #000000 !important;  /* Force black for all headings & captions */
+}
+
+/* Buttons text color */
+.stButton button {
+    color: #000000 !important;   /* Button text black */
+    background-color: #bfdbfe !important; /* Optional: slightly darker blue button */
+}
+
+/* Text area input text */
+textarea, input {
+    color: #000000 !important;  /* Input text black */
+}
+
+/* Streamlit messages (success, warning, error, info) */
+.stAlert {
+    color: #000000 !important;
+}
+
+/* Links */
+a {
+    color: #1d4ed8 !important;  /* Dark blue links */
 }
 </style>
 """, unsafe_allow_html=True)
-
 st.title("🌿 Mental Wellness AI")
 st.caption("A calm AI space to understand your emotions.")
 

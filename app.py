@@ -23,7 +23,7 @@ st.markdown("""
 /* Main container text */
 .block-container {
     padding-top: 2rem;
-    color: #000000;  /* Make all normal text black */
+    color: white;  /* Make all normal text black */
 }
 
 /* Titles, headers, captions */
@@ -86,3 +86,4 @@ if st.button("Analyze Emotion"):
         st.write(f"Confidence: {confidence:.2f}%")
     else:
         st.warning("Please enter your thoughts.")
+

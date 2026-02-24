@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6, .stText, .css-10trblm {
 
 /* Text area input text */
 textarea, input {
-    color: #000000 !important;  /* Input text black */
+    color: white !important;  /* Input text black */
 }
 
 /* Streamlit messages (success, warning, error, info) */
@@ -86,4 +86,5 @@ if st.button("Analyze Emotion"):
         st.write(f"Confidence: {confidence:.2f}%")
     else:
         st.warning("Please enter your thoughts.")
+
 
